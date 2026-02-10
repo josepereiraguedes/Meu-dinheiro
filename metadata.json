@@ -1,0 +1,7 @@
+{
+  "name": "Meu Dinheiro - Next Gen",
+  "description": "Um gerenciador financeiro pessoal com estética gamer moderna, interface 3D Glassmorphism e alta performance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
