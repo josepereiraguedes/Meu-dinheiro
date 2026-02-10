@@ -22,11 +22,18 @@ export const LockScreen: React.FC = () => {
 
   useEffect(() => {
     if (pin.length === 4) {
-      const success = unlockApp(pin);
-      if (!success) {
-        setError(true);
-        setTimeout(() => setPin(""), 400); // Clear after shake
-      }
+      // Small delay to let user see the 4th dot filled
+      const timer = setTimeout(() => {
+          const success = unlockApp(pin);
+          if (!success) {
+            setError(true);
+            setTimeout(() => {
+                setPin("");
+                setError(false);
+            }, 400); 
+          }
+      }, 100);
+      return () => clearTimeout(timer);
     }
   }, [pin, unlockApp]);
 
@@ -86,13 +93,6 @@ export const LockScreen: React.FC = () => {
             </button>
          </div>
       </div>
-      <style>{`
-        @keyframes shake {
-          0%, 100% { transform: translateX(0); }
-          25% { transform: translateX(-10px); }
-          75% { transform: translateX(10px); }
-        }
-      `}</style>
     </div>
   );
 };
