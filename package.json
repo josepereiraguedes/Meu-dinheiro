@@ -1,5 +1,5 @@
 {
-  "name": "meu-dinheiro---next-gen",
+  "name": "meu-dinheiro-next-gen",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,18 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "18.3.1",
-    "react": "18.3.1",
-    "recharts": "2.12.2",
-    "clsx": "2.1.0",
+    "clsx": "^2.1.0",
+    "idb": "^8.0.0",
     "lucide-react": "0.344.0",
-    "react-router-dom": "6.22.3",
-    "idb": "8.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3",
+    "recharts": "^2.12.2"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
   }
 }
