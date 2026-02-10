@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" stroke="#1e293b" stroke-width="2"/>
+  <!-- D-Pad shape representing Gamer/Finance control -->
+  <path d="M30 50 L42 50 M36 44 L36 56" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <!-- Action Buttons -->
+  <circle cx="60" cy="55" r="5" fill="white" opacity="0.9"/>
+  <circle cx="70" cy="45" r="5" fill="white" opacity="0.9"/>
+</svg>
